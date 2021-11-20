@@ -3,9 +3,15 @@ import React from "react";
 function Keg(props) {
   return(
     <React.Fragment>
-      <p>This is a Keg</p>
+      <div>
+        <h2>{props.name} - {props.quantity}</h2>
+      </div>
     </React.Fragment>
   );
+}
+
+Keg.propTypes = {
+  name: PropTypes.string.isRequired, quantity: PropTypes.number
 }
 
 export default Keg;
