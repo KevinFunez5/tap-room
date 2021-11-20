@@ -12,6 +12,7 @@ function NewKegForm(props) {
       price: parseInt(event.target.price.value),
       content: parseInt(event.target.content.value),
       pints: parseInt(124),
+      id: v4()
     })
   }
   return(
@@ -38,3 +39,9 @@ function NewKegForm(props) {
     </React.Fragment>
   );
 }
+
+NewKegForm.propTypes = {
+  onNewKegCreation: PropTypes.func
+};
+
+export default NewKegForm;
