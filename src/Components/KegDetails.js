@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function KegDetail(props) {
+function KegDetails(props) {
   const { keg } = props;
 
   return(
@@ -12,8 +12,8 @@ function KegDetail(props) {
     </React.Fragment>
   )
 }
-KegDetail.PropTypes = {
+KegDetails.propTypes = {
   keg: PropTypes.object
 }
 
-export default KegDetail;
+export default KegDetails;
